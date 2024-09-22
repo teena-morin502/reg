@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+  <link rel="stylesheet" href="reg.css"> 
+</head>
+<body>
+  <div class="reg">REGISTER NOW</div>
+  <form action="/submit-form" method="post">
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+      </li>
+      <li>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="user_age" min="1" max="100" />
+      </li>
+      <li>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" />
+      </li>
+      
+      <li>
+        <label for="file">Upload Aadhaar document:</label>
+        <input type="file" id="file" name="user_file" />
+      </li>
+      <li>
+        <label for="edu">Choose your educational qualification:</label>
+        <select id="edu" name="edu_qual">
+          <option value="" selected disabled>Please Select...</option>
+          <option value="10th">10th</option>
+          <option value="12th">12th</option>
+          <option value="diploma">Diploma</option>
+          <option value="other">Other</option>
+        </select>
+      </li>
+      <li>
+        <label for="message">Message:</label>
+        <textarea id="message" name="user_message" rows="4" cols="50"></textarea>
+      </li>
+      
+      <li>
+        
+        <input type="checkbox" id="agreement" name="agreement" /> <label for="agreement">I agree to the terms and conditions.</label>
+      </li>
+      <li>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </li>
+    </ul>
+  </form>
+</body>
+</html>
+ 
